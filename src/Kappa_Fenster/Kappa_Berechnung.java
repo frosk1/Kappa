@@ -120,6 +120,10 @@ public class Kappa_Berechnung extends JFrame {
 				pa = 0;
 				pe = 0;
 				kappa = 0;
+				if(textnummern1.size() == 0 && textnummern2.size() == 0){
+					JOptionPane.showMessageDialog(null, "Es wurden keine Annotationsdateien eingelesen","Einlesefehler",JOptionPane.WARNING_MESSAGE);
+				}
+				
 				// Ueberpruefung der Dateien auf Gleiche Annotationstexte
 				if (textnummern1.size() != textnummern2.size()) {
 					annogleichlaenge = false;

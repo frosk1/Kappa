@@ -250,7 +250,7 @@ public class Kappa_Berechnung extends JFrame {
 			c.setDialogTitle("Bitte Annotationsdatei auswählen");
 			if (rVal == JFileChooser.APPROVE_OPTION) {
 				datei2 =c.getSelectedFile();
-				System.out.println(datei2);
+				//System.out.println(datei2);
 				try(BufferedReader reader = new BufferedReader(new FileReader(datei2)) ){
 					String zeile;
 				while( (zeile=reader.readLine()) != null){
